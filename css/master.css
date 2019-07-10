@@ -1,14 +1,60 @@
 .p1{
   text-align: center;
-  text-shadow: rgb(255, 0, 0);
-  font-size: rgb(0, 0, 0);
 }
-.body{
-  background-color: #ABDC29;
-  color: #871208;
-  padding: 100px 100px 100px 100px;
+body{
+  background-color: #B12345;
 }
-.main_content{
-  background-color: inherit;
-  color: inherit;
+.main_content {
+    color: #F30348;
+    font-size: 20px;
+    background-color: inherit;
+}
+.main_content:hover{
+  background-color: #D20348;
+}
+.heading{
+  background-color:  #f8c059;
+  color: black;
+  text-align: center;
+  font-size: 100px;
+}
+.links{
+  width: 20%;
+}
+
+li{
+  color: black;
+}
+li:hover{
+  color: white;
+}
+a{
+  font-size: 30px;
+  padding: 82px;
+  border-radius:270px;
+  border-width: medium;
+}
+
+/* unvisited link */
+a:link {
+  width: 20%;
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+.content{
+  font-size:30px;
 }
