@@ -6,10 +6,8 @@ import { TM_Driver } from './TM_Driver';
 
 export class Order{
     id: number;
-    time_ordered: Time;
-    day_ordered: Weekdays;
     date_ordered: Date;
     order_status: String;
-    person_ordered: TM_User;
-    driver_assigned: TM_Driver;
+    person_id_ordered: number;
+    driver_id_assigned: number;
 }

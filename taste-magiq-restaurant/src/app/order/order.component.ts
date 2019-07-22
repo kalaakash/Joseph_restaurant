@@ -26,17 +26,17 @@ export class OrderComponent implements OnInit {
   
   getOrder(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.orderService.getHero(id)
+    this.orderService.getOrder(id)
       .subscribe(order => this.order = order);
   }
 
   goBack(): void {
     this.location.back();
   }
-
+/*
   save(): void {
     this.orderService.updateOrder(this.order)
       .subscribe(() => this.goBack());
   }
-
+*/
 }
