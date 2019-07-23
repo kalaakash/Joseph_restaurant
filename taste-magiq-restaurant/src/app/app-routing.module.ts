@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component'
-import { MenuComponent } from './menu/menu.component'
-import { ContactComponent } from './contact/contact.component'
-import { OrderComponent } from './order/order.component'
-
+import { MenuItemModule } from '../menu-item/menu-item.module';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'order', component: OrderComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'main', component:  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), MenuItemModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
