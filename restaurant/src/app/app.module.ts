@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { MainOrderModule } from '../main-order/main-order.module';
+import { UserOrderModule } from '../user-order/user-order.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +15,13 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MainOrderModule,
+    UserOrderModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

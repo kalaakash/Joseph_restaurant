@@ -1,0 +1,61 @@
+<hr>
+<h1>MENU ITEMS</h1><!--
+<ul class="orders">
+    <li *ngFor="let menu_item of menuItems" class="menu-items-list">
+        {{ menu_item.food_item.id }}. {{ menu_item.food_item.itemName }}
+        <button (click)="menu_item.quantity=menu_item.quantity+1">+</button>
+    </li>
+</ul>
+<hr>
+-->
+Name of person: <input [(ngModel)]="person_name" placeholder="Name of person"/> <br>
+Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input [(ngModel)]="address" placeholder="Address to deliver to"/> <br>
+<table>
+    <tr>
+        <th>Name 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Quantity
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>Category</th>
+    </tr>
+</table>
+<table *ngFor="let menu_item of menuItems">
+    <tr>
+        <th> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+    </tr>
+    <tr>
+        <td> {{ menu_item.food_item.itemName }} </td>
+        <td>
+            <button *ngIf="menu_item.quantity>0" (click)="menu_item.quantity=menu_item.quantity-1">-</button>
+                {{ menu_item.quantity }} 
+            <button (click)="menu_item.quantity=menu_item.quantity+1">+</button>
+        </td>
+        <td> {{menu_item.food_item.category}} </td>
+    </tr>
+</table>
+<br><br>
+Comments: <input [(ngModel)]="comment" placeholder="Comments"/><br>
+<hr>
+<h2>YOUR ORDER</h2>
+<div>
+    <ul *ngFor="let menu_item of menuItems">
+        <li *ngIf="menu_item.quantity > 0">
+            {{ menu_item.food_item.itemName }}  X {{ menu_item.quantity }}
+        </li>
+    </ul>
+</div>
+<button (click)="submitBaseOrder()">SUBMIT ORDER</button>

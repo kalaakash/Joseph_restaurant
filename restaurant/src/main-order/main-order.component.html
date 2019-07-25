@@ -1,1 +1,89 @@
-<p>main-order works!</p>
+<h2>All Orders</h2>
+
+<button (click)="getOrders()">UPDATE ORDER LIST</button>
+
+<ul class="orders">
+    <li *ngFor="let order of orders" class="order-summary">
+        <div *ngIf="order.isActive===true">
+        <span class="badge"> Order No. {{order.id}}</span> from {{order.base_order.person_ordered }} 
+        <button (click)="order.isVisibleOrder=true; showOrders();">SHOW ORDER</button>
+        <button (click)="order.isVisibleOrder=false">HIDE ORDER</button>
+        <button (click)="order.order_status='CLEARED';saveBaseOrder(order)">CLEAR ORDER</button>
+        <div *ngIf="order.stillEditing!=true">
+            <input [(ngModel)]="order.order_status" placeholder="ENTER STATUS"/>
+            <button (click)="order.stillEditing=false;saveBaseOrder(order)">CHANGE STATUS</button>
+        </div>
+        <div *ngIf="order.driver_assigned===false">ENTER DRIVER ID TO DELIVER
+            <input [(ngModel)]="order.driver_id_assigned" placeholder="DRIVER ID"/>
+            <button (click)="order.driver_assigned=true;saveBaseOrder(order);">Save Driver ID</button>
+        </div>
+        </div>
+    </li>
+</ul>
+<ul class="orders" style="list-style-type: none">
+    <li *ngFor="let order of orders" class="order">
+        <div *ngIf="order.isVisibleOrder===true">
+            <hr>
+            {{order.id}} &nbsp; Name of person: {{order.base_order.person_ordered}} <br>
+            Deliver to : {{order.base_order.address}} 
+            <div *ngIf="order.driver_assigned===true">Delivery by driver with ID {{order.driver_id_assigned}}</div> <br>
+            Ordered on {{order.base_order.date_ordered}} <br> Status : {{order.order_status}}  <br> <br>
+            Menu Items :
+                        <table>
+                            <tr>
+                                <th>Quantity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                <th>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </th>
+                                <th>Category</th>
+                            </tr>
+                        </table>
+                        <table *ngFor="let menu_item of order.base_order.menu_items">
+                            <tr>
+                                <th> &nbsp;&nbsp;&nbsp;</th>
+                                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>{{menu_item.quantity}} X </td>
+                                <td>{{menu_item.food_item.itemName}}</td>
+                                <td>{{menu_item.food_item.category}}</td>
+                            </tr>
+                        </table> <br>
+            Comment: &nbsp;&nbsp;&nbsp; {{order.base_order.comment}}
+        </div><br><br>
+    </li>
+</ul>
+<!--
+<ul class="edit_orders" style="list-style-type: none">
+    <li *ngFor="let order of orders" class="order">
+        <div *ngIf="order.stillEditing===true">
+            <hr>
+            Enter name of person: <input [(ngModel)]="order.person_ordered" placeholder="name"/> <br>
+            Enter address to deliver to : <input [(ngModel)]="order.address" placeholder="address"/> <br>
+            Menu Items :  <table *ngFor="let menu_item of order.base_order.menu_items">
+                            <tr>
+                                <th>Quantity &nbsp;&nbsp;&nbsp;</th>
+                                <th>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </th>
+                                <th>Category</th>
+                            </tr>
+                            <tr>
+                                <td>{{menu_item.quantity}}</td>
+                                <td>{{menu_item.food_item.itemName}}</td>
+                                <td>{{menu_item.food_item.category}}</td>
+                            </tr>
+                        </table> 
+            Comment: &nbsp;&nbsp;&nbsp; {{order.base_order.comment}}
+        </div><br><br>
+    </li>
+</ul>-->

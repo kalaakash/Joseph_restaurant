@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { MainOrderComponent } from './main-order.component';
+import { UserOrderComponent } from './user-order.component';
 
 @NgModule({
-  declarations: [ MainOrderComponent] ,
+  declarations: [ UserOrderComponent ] ,
   imports: [
     CommonModule,
     FormsModule,
     BrowserModule
   ],
-  exports:[ MainOrderComponent ]
+  exports:[ UserOrderComponent ]
 })
-export class MainOrderModule { }
+export class UserOrderModule { }
