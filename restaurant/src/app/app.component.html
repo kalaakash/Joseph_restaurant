@@ -2,11 +2,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
   <nav>
     <img width="300" alt="Taste Magiq Logo" src="../assets/images/Taste_Magic.JPG">
-    <div class="nav-options"><button>About Us</button></div>
-    <div class="nav-options"><button>Menu</button></div>
-    <div class="nav-options"><button>Order Now</button></div>
-    <div class="nav-options"><button>Contact</button></div>
-    <div class="nav-options"><button>Taste Magiq</button></div>
+    <div class="nav-options"><button (click)="showAbout()">About Us</button></div>
+    <div class="nav-options"><button (click)="showMenu()">Menu</button></div>
+    <div class="nav-options"><button (click)="showOrder()">Order Now</button></div>
+    <div class="nav-options"><button (click)="showContact()">Contact</button></div>
+    <div class="nav-options"><button (click)="showHome()">Taste Magiq</button></div>
   </nav>
-  <app-main-order></app-main-order>
-  <app-user-order></app-user-order>
+  <div *ngIf="current_mode===viewing_modes[0]">
+    <app-home></app-home>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[1]">
+    <app-info></app-info>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[2]">
+    <app-menu></app-menu>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[3]">
+    <app-contact></app-contact>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[4]">
+    <app-user-order></app-user-order>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[5]">
+    <app-main-order></app-main-order>
+  </div>
+  <div *ngIf="current_mode===viewing_modes[6]">
+    <app-user-order></app-user-order>
+  </div>
+  <hr>
+  <span><button (click)="goManager()">Manager</button></span>
+  <span><button (click)="goDriver()">Driver</button></span>

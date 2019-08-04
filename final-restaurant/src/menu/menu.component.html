@@ -1,0 +1,6 @@
+<h2>Menu</h2>
+<ul class="menu-items">
+    <li *ngFor="let foodItem of FoodItems">
+        <span class="badge">{{foodItem.name}}</span> {{foodItem.category}}
+    </li>
+</ul>

@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="head-nav">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <nav>
+    <div class = "nav-option">
+      <button (click)="showHome()">
+        HOME
+      </button>
+    </div>
+    <div class="nav-option">
+      <button (click)="showAbout()">
+        ABOUT
+      </button>
+    </div>
+    <div class="nav-option">
+      <button (click)="showMenu()">
+        MENU
+      </button>
+    </div>
+    <div class="nav-option">
+      <button (click)="showContact()">
+        CONTACT
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="main-nav">
+  <div *ngIf = "currentState === states[0]">
+    <app-home></app-home>
+  </div>
+  <div *ngIf="currentState === states[1]">
+    <app-about></app-about>
+  </div>
+  <div *ngIf="currentState === states[2]">
+    <app-contact></app-contact>
+  </div>
+  <div *ngIf="currentState === states[3]">
+    <app-menu></app-menu>
+  </div>
+</div>
+<div class="end-nav">
+  <div class="social-media">
+    <img src="../assets/images/facebook.jpg" alt="facebook" width="80px" height="80px">
+  </div>
+  <div class="social-media">
+    <img src="../assets/images/instagram.png" alt="instagram" width="80px" height="80px">
+  </div>
+  <div class="social-media">
+    <img src="../assets/images/whatsapp.png" alt="whatsapp" width="80px" height="80px">
+  </div>
+</div>

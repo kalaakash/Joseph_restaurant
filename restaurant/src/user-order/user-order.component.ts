@@ -28,7 +28,6 @@ export class UserOrderComponent implements OnInit {
 
   ngOnInit() {
     this.order = {
-        id: 0,
         order_status: 'NOT ORDERED',
         driver_id_assigned: 0,
         driver_assigned: false,
@@ -55,7 +54,6 @@ export class UserOrderComponent implements OnInit {
   }
 
   submitBaseOrder(): void {
-    this.order.id = this.assignIdToOrder();
     this.fillMenuItems();
     if (this.order.base_order.menu_items.length > 0) {
       this.order.driver_assigned = false;
@@ -71,9 +69,5 @@ export class UserOrderComponent implements OnInit {
       this.orderService.saveBaseOrder(this.order)
       .subscribe();
     }
-  }
-
-  assignIdToOrder(): number {
-    return 1;
   }
 }

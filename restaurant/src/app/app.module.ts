@@ -1,27 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from '../app-routing.module';
+import { DriverComponent } from '../driver/driver.component';
+import { ManagerComponent } from '../manager/manager.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from '../home/home.module';
+import { InfoModule } from '../info/info.module';
 import { MainOrderModule } from '../main-order/main-order.module';
 import { UserOrderModule } from '../user-order/user-order.module';
+import { ContactModule } from 'src/contact/contact.module';
+import { MenuModule } from 'src/menu/menu.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DriverComponent,
+    ManagerComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    InfoModule,
+    ContactModule,
+    HomeModule,
     HttpClientModule,
     MainOrderModule,
+    MenuModule,
     UserOrderModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
-    )
   ],
   providers: [],
   bootstrap: [AppComponent]
