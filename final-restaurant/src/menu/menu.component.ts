@@ -14,8 +14,8 @@ export class MenuComponent implements OnInit {
 
   constructor() { 
     this.categories = [
-      "Pizza and Pasta",
-      "Burger and Sandwich",
+      "Snacks",
+      "Main Course",
       "Softy & Ice-Creams"
     ];
   }

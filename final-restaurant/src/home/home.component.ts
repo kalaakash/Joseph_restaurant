@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeInfo } from './home_info';
+import { BubbleInfo } from './bubble';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,11 @@ import { HomeInfo } from './home_info';
 })
 export class HomeComponent implements OnInit {
 
+  bubbles: String[];
   home_info: String[];
 
-  constructor() { 
+  constructor() {
+    this.bubbles = BubbleInfo;
     this.home_info = HomeInfo;
   }
 

@@ -13,6 +13,20 @@
     color:rgb(7, 65, 26);
 }
 
+.phone-no{
+  font-weight: bold;
+  font-size: 1.3em;
+  color: black;
+}
+.location{
+  font-size: 1.3em;
+  color: black;
+}
+.image-location{
+  width: 350px;
+  height: 450px;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 .contact{
