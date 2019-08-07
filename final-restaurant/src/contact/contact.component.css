@@ -1,0 +1,32 @@
+.contact{
+    padding: 5px 5px 5px 1px;
+    font-family: 'Kalam';
+    font-size:1em;
+    text-align: center;
+    color: rgb(185, 6, 0);
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+.contact:hover{
+    color:rgb(7, 65, 26);
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.contact{
+    padding: 10px 10px 10px 1px;
+    font-family: 'Kalam';
+    font-size:2em;
+    text-align: center;
+    color: rgb(185, 6, 0);
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+.contact:hover{
+    color:rgb(7, 65, 26);
+}
+}

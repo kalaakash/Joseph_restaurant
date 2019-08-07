@@ -6,11 +6,19 @@ import { FOODITEMS } from './Food_items';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
+
 export class MenuComponent implements OnInit {
 
   FoodItems = FOODITEMS;
+  categories:String[];
 
-  constructor() { }
+  constructor() { 
+    this.categories = [
+      "Pizza and Pasta",
+      "Burger and Sandwich",
+      "Softy & Ice-Creams"
+    ];
+  }
 
   ngOnInit() {
   }
