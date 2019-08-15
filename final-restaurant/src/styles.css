@@ -7,6 +7,7 @@ body{
   background-image: url("./assets/images/burger-home.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-blend-mode: soft-light; 
 }
 button{
   padding: 50px 90px;
@@ -16,8 +17,8 @@ button{
   outline: none;
   color: #fff;
 /*  background-color: inherit;*/
-  border-bottom: 6px solid red;
-  background-color: rgb(241, 232, 232);
+  border-bottom: 6px solid rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
   border-radius: 2.5px;
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
@@ -41,6 +42,7 @@ body{
   background-color: #375E97;
   background-position: 50% 60%; 
   background-image: url("./assets/images/burger-home.jpg");
+  background-blend-mode: soft-light; 
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -51,8 +53,8 @@ button{
   cursor: pointer;
   outline: none;
   color: #fff;
-  border-bottom: 6px solid red;
-  background-color: rgb(241, 232, 232);
+  border-bottom: 6px solid rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
   border: none;
   border-radius: 0.75px;
   -webkit-transition: background-color 1s ease-out;

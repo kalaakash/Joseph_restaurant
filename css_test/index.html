@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello Dribbble!</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="control">
+	<input type="checkbox" id="enable-squiggly" checked/>
+	<label for="enable-squiggly">Enable Distort Animation</label>
+</div>
+<div id="avatar" class="avatar enable-squiggly">
+	<div class="notification">
+	</div>
+	<div class="head">
+		<div class="hair">
+			<div class="fl"></div>
+			<div class="fr"></div>
+			<div class="b"></div>
+			<div class="tr"></div>
+			<div class="tl"></div>
+			<div class="l1"></div>
+			<div class="l2"></div>
+		</div>
+		<div class="face">
+			<div class="face-features">
+				<div class="eyes">
+					<div class="eye left">
+						<div class="eye-brow"></div>
+						<div class="eye-ball"></div>
+					</div>
+					<div class="eye right">
+						<div class="eye-brow"></div>
+						<div class="eye-ball"></div>
+					</div>
+				</div>
+				<div class="eye-glasses">
+					<div class="glass left"></div>
+					<div class="glass right"></div>
+				</div>
+				<div class="nose"></div>
+				<div class="mouth"></div>
+
+				<div class="ears">
+					<div class="ear left"></div>
+					<div class="ear right"></div>
+				</div>
+			</div>
+
+			<div class="neck"></div>
+		</div>
+	</div>
+	<div class="circle">
+		<div class="tshirt">
+			<div class="tneck"></div>
+			<div class="tneckf"></div>
+			<div class="sl"></div>
+			<div class="sr"></div>
+		</div>
+		<div class="circle-mask">
+			<div class="laptop-screen"></div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+  <defs>
+
+    
+    <filter id="squiggly-0">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+    <filter id="squiggly-1">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+    
+    <filter id="squiggly-2">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+    
+    <filter id="squiggly-4">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+    </filter>
+  </defs> 
+</svg>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

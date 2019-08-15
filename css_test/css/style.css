@@ -1,0 +1,622 @@
+@import "https://fonts.googleapis.com/css?family=Karla";
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.avatar {
+  position: relative;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  width: 510px;
+  height: 510px;
+}
+
+.avatar.enable-squiggly {
+  -webkit-animation: squiggly-anim 0.4s infinite;
+          animation: squiggly-anim 0.4s infinite;
+}
+
+.head {
+  -webkit-animation: updown 4s infinite;
+          animation: updown 4s infinite;
+  position: relative;
+  z-index: 2;
+  width: 250px;
+  margin: auto;
+}
+
+.hair {
+  position: relative;
+}
+.hair .fl, .hair .fr {
+  z-index: 1;
+}
+.hair .fl {
+  width: 90px;
+  height: 40px;
+  background-color: #a0aab2;
+  border-bottom-right-radius: 80%;
+  border-bottom: 5px solid #667683;
+  border-right: 5px solid #667683;
+  position: absolute;
+  top: 10px;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+.hair .fr {
+  width: 180px;
+  height: 120px;
+  background-color: #a0aab2;
+  border-bottom: 5px solid #667683;
+  border-left: 5px solid #667683;
+  border-bottom-left-radius: 80%;
+  position: absolute;
+  right: -5px;
+  top: -20px;
+}
+.hair .b {
+  width: 280px;
+  height: 250px;
+  top: -5px;
+  z-index: -2;
+  background-color: #a0aab2;
+  position: absolute;
+  left: -15px;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 10%;
+  border-left: 5px solid #667683;
+  border-right: 5px solid #667683;
+}
+.hair .tl {
+  width: 90px;
+  height: 80px;
+  background-color: #a0aab2;
+  border-top: 5px solid #667683;
+  border-left: 5px solid #667683;
+  position: absolute;
+  top: -60px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 10%;
+  left: -15px;
+}
+.hair .tr {
+  width: 200px;
+  height: 100px;
+  background-color: #a0aab2;
+  border-top: 5px solid #667683;
+  border-right: 5px solid #667683;
+  border-left: 5px solid #667683;
+  position: absolute;
+  top: -80px;
+  right: -15px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 80%;
+}
+.hair .l1, .hair .l2 {
+  width: 150px;
+  height: 70px;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 70%;
+  border-bottom: 5px solid #667683;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.hair .l1 {
+  right: -40px;
+  top: -20px;
+}
+.hair .l2 {
+  right: -50px;
+  top: -50px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.face {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  margin: 30px auto;
+  border: 5px solid #667683;
+  border-top: 2px solid #667683;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  background-color: #f2ebeb;
+}
+.face-features {
+  margin-top: 40px;
+  position: relative;
+  height: 100%;
+}
+
+.eyes {
+  position: absolute;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.eye-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #667683;
+  box-shadow: 0 30px 0 5px #dfd5d6;
+  -webkit-animation: blink 4s infinite;
+          animation: blink 4s infinite;
+}
+
+.eye-glasses {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 216px;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.eye-glasses:before {
+  content: " ";
+  width: 50px;
+  height: 0;
+  border-top: 5px solid #9c8b8a;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  margin: auto;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.eye-glasses .glass {
+  width: 80px;
+  height: 40px;
+  border: 5px solid #9c8b8a;
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  border-top-left-radius: 50% 10%;
+  border-top-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30%;
+}
+
+.nose {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 35%;
+  border: 4px solid #667683;
+  border-top: none;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+}
+.nose:after {
+  content: " ";
+  background-color: #dfd5d6;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.mouth {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: 5px solid #667683;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.mouth:after {
+  content: " ";
+  width: 20px;
+  height: 10px;
+  background-color: #dfd5d6;
+  position: absolute;
+  top: 50px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ears {
+  width: 100%;
+  position: absolute;
+  top: 26%;
+  left: 0;
+}
+.ears .ear {
+  width: 25px;
+  height: 50px;
+  border: 5px solid #667683;
+  overflow: hidden;
+  position: absolute;
+  background-color: #f2ebeb;
+}
+.ears .ear:before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-color: #dfd5d6;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+}
+.ears .ear.left {
+  right: 100%;
+  border-top-left-radius: 60%;
+  border-bottom-left-radius: 70%;
+}
+.ears .ear.left:before {
+  right: -10px;
+}
+.ears .ear.right {
+  left: 100%;
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 70%;
+}
+.ears .ear.right:before {
+  left: -10px;
+}
+
+.neck {
+  width: 40px;
+  height: 45px;
+  border: 5px solid #667683;
+  border-bottom: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: auto;
+  background-color: #f2ebeb;
+  box-shadow: inset 0 30px 0 #dfd5d6;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #bfdff8;
+  position: absolute;
+  top: 50px;
+  overflow: hidden;
+  border: 5px solid #667683;
+  box-shadow: inset 50px 50px #a8cdea;
+}
+
+.tshirt {
+  position: absolute;
+  bottom: 160px;
+  width: 280px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.tshirt .tneck {
+  width: 70px;
+  height: 60px;
+  border: 5px solid #667683;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #a0aab2;
+  position: relative;
+}
+.tshirt .tneckf {
+  width: 40px;
+  height: 37px;
+  background-color: #f2ebeb;
+  position: relative;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 15px;
+  border-bottom: 5px solid #667683;
+  border-left: 5px solid #667683;
+  border-right: 5px solid #667683;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.tshirt .sl, .tshirt .sr {
+  width: 140px;
+  height: 100px;
+  border-top: 5px solid #667683;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: white;
+}
+.tshirt .sl {
+  left: 0;
+  border-left: 5px solid #667683;
+  border-top-left-radius: 80% 90%;
+}
+.tshirt .sr {
+  right: 0;
+  border-right: 5px solid #667683;
+  border-top-right-radius: 90% 80%;
+}
+
+.circle-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.laptop-screen {
+  width: 320px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  border: 5px solid #667683;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+.laptop-screen:before {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.control {
+  margin-bottom: 50px;
+}
+.control input {
+  display: none;
+}
+.control input:checked + label:before {
+  background-color: #99e283;
+}
+.control label {
+  font-family: "karla";
+  display: block;
+  font-size: 18px;
+  color: #667683;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.control label:before {
+  content: " ";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 4px solid #667683;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.notification {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  margin: auto;
+  font-family: karla;
+  width: 450px;
+  z-index: 5;
+}
+.notification .badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: #e91e63;
+  text-align: center;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 24px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  color: white;
+}
+.notification .balloon {
+  border: 5px solid #667683;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.6;
+  color: #667683;
+  background-color: white;
+}
+.notification .balloon a {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+@-webkit-keyframes blink {
+  45% {
+    height: 20px;
+    margin-top: 0px;
+  }
+  50% {
+    height: 1px;
+    margin-top: 10px;
+  }
+  55% {
+    height: 20px;
+    margin-top: 0px;
+  }
+}
+
+@keyframes blink {
+  45% {
+    height: 20px;
+    margin-top: 0px;
+  }
+  50% {
+    height: 1px;
+    margin-top: 10px;
+  }
+  55% {
+    height: 20px;
+    margin-top: 0px;
+  }
+}
+@-webkit-keyframes updown {
+  20% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes updown {
+  20% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@-webkit-keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+            filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+            filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+            filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+            filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+            filter: url("#squiggly-4");
+  }
+}
+@keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+            filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+            filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+            filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+            filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+            filter: url("#squiggly-4");
+  }
+}
