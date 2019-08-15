@@ -44,8 +44,8 @@ li{
     font-weight: bold;
 }
 .badge{
-    color: blue;
-    padding: 0.2em 0.2em 0.2em 0.2em;
+    color: rgb(0, 0, 0);
+    padding: 0.5em 0.2em 0.5em 0.2em;
 }
 
 .category_item{

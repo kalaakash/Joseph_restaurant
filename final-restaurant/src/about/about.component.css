@@ -7,7 +7,7 @@ ul{
 li{
     padding: 10px 10px 10px 1px;
     font-family: 'Kalam';
-    font-size:2em;
+    font-size: 3em;
     text-align: center;
     color: rgb(185, 6, 0);
   -webkit-transition: color 1s ease-out;
@@ -28,7 +28,7 @@ li{
     padding: 5px 5px 5px 1px;
     font-family: 'Kalam';
     font-weight: bold;
-    font-size:1em;
+    font-size:2em;
     text-align: center;
     color: rgb(0, 0, 0);
   -webkit-transition: color 1s ease-out;

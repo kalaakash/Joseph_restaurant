@@ -15,7 +15,7 @@
 
 .phone-no{
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 0.7em;
   color: black;
 }
 .location{
@@ -25,6 +25,21 @@
 .image-location{
   width: 350px;
   height: 450px;
+}
+
+.mapouter {
+  position: center;
+  padding-left: 15em;
+  text-align: right;
+  height: 750px;
+  width: 900px;
+}
+    
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 750px;
+  width: 900px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -43,4 +58,19 @@
 .contact:hover{
     color:rgb(7, 65, 26);
 }
+.mapouter {
+  position: center;
+  padding-left: 15em;
+  text-align: right;
+  height: 750px;
+  width: 900px;
+}
+    
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 750px;
+  width: 900px;
+}
+
 }
