@@ -22,12 +22,12 @@ li:hover{
 .bubble_info{
   padding-top: 50px;
   padding-left: 30px; 
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 .bubble_info2{
   padding-top: 70px;
   padding-left: 25px; 
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 .bubble{
   width: 160px;
@@ -96,12 +96,12 @@ li:hover{
 .bubble_info{
   padding-top: 28px;
   padding-left: 16px; 
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 .bubble_info2{
   padding-top: 34px;
   padding-left: 12px; 
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 .bubble{
   width: 80px;
