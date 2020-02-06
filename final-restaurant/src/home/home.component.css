@@ -16,6 +16,11 @@ li{
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
 }
+.information{
+  background-color: rgb(4, 4, 121);
+    color: rgb(57, 255, 123);
+    text-align: center;
+}
 .info-back{
   align-items: center;  
   margin-left: 450px;
@@ -75,9 +80,6 @@ li{
   flex-flow: row;
   flex-direction: row;
 }
-/* .marquee-lad{
-  background-color: rgb(4, 175, 124);
-} */
 }
 
 /*For mobiles*/
@@ -95,6 +97,10 @@ li{
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
+}
+.information{
+  background-color: blueviolet;
+  color: aquamarine;
 }
 .bubble_info{
   padding-top: 28px;
@@ -120,6 +126,11 @@ li{
   height: 80px;
   background: rgb(13, 214, 250);;
   border-radius: 50%;
+}
+.information{
+  background-color: rgb(4, 4, 121);
+    color: rgb(57, 255, 123);
+  text-align: center;
 }
 .bubble2{
   width: 100px;

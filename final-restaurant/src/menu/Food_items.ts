@@ -423,33 +423,287 @@ export const FOODITEMS: Food_item[] = [
     },
     {
         _id: 80,
-        name: "Lime Juice : ₹120",
-        category: "Fruit Juices"
+        name: "Lime Juice : ₹30",
+        category: "Beverages"
     },
     {
         _id: 80,
-        name: "Lime Soda : ₹120",
-        category: "Fruit Juices"
+        name: "Lime Soda : ₹40",
+        category: "Beverages"
     },
     {
         _id: 80,
-        name: "Black Coffee : ₹120",
-        category: "Fruit Juices"
+        name: "Black Coffee : ₹20",
+        category: "Beverages"
     },
     {
         _id: 80,
-        name: "Cappucino : ₹120",
-        category: "Fruit Juices"
+        name: "Cappucino : ₹80",
+        category: "Beverages"
     },
     {
         _id: 80,
-        name: "Mochacinno : ₹120",
-        category: "Fruit Juices"
+        name: "Mochacinno : ₹100",
+        category: "Beverages"
     },
     {
         _id: 90,
-        name: "H : ₹120",
-        category: "Fruit Juices"
+        name: "Hot Chocolate : ₹80",
+        category: "Beverages"
     },
-
+    {
+        _id: 90,
+        name: "Cardamom Tea : ₹30",
+        category: "Beverages"
+    },
+    {
+        _id: 90,
+        name: "Cold Coffee : ₹100",
+        category: "Beverages"
+    },
+    {
+        _id: 90,
+        name: "Coffeelate : ₹50",
+        category: "Beverages"
+    },
+    {
+        _id: 90,
+        name: "Soft drinks : MRP",
+        category: "Beverages"
+    },
+    {
+        _id: 300,
+        name: "Triple Chocolate : ₹200",
+        category: "Waffles "
+    },
+    {
+        _id: 301,
+        name: "Honey and Maple : ₹150",
+        category: "Waffles "
+    },
+    {
+        _id: 302,
+        name: "Butterscotch : ₹150",
+        category: "Waffles "
+    },
+    {
+        _id: 303,
+        name: "Ice Cream Sandwich : ₹150",
+        category: "Waffles "
+    },
+    {
+        _id: 304,
+        name: "Butter Popcorn : ₹50",
+        category: "Popcorn "
+    },
+    {
+        _id: 305,
+        name: "Caramel Popcorn : ₹100",
+        category: "Popcorn "
+    },
+    {
+        _id: 304,
+        name: "Butter Popcorn : ₹50",
+        category: "Popcorn "
+    },
+    {
+        _id: 305,
+  name: "*Margherita Pizza: ₹220(Regular), ₹330(Medium), ₹420(Large)",
+        category: "Pizza Veg "
+    },
+    {
+        _id: 306,
+  name: "*Paneer Fantasy : ₹250(Regular), ₹370(Medium), ₹490(Large)",
+        category: "Pizza Veg "
+    },
+    {
+        _id: 307,
+  name: "*Country Side Supreme : ₹300(Regular), ₹390(Medium), ₹500(Large)",
+        category: "Pizza Veg "
+    },
+    {
+        _id: 308,
+  name: "*Mushroom Delight : ₹270(Regular), ₹370(Medium), ₹480(Large)",
+        category: "Pizza Veg "
+    },
+    {
+        _id: 309,
+  name: "*Cheese and Corn : ₹250(Regular), ₹350(Medium), ₹450(Large)",
+        category: "Pizza Veg "
+    },
+    {
+        _id: 310,
+  name: "*Beef Pepperoni Pizza : ₹330(Regular), ₹400(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 311,
+  name: "*Hot Stuff Pizza (Beef) : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 312,
+  name: "*Chicken Sausage Pizza : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 313,
+  name: "*Chicken Sausage Pizza : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 314,
+  name: "*Chicken Alfredo Pizza : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 315,
+  name: "*Barbecue Chicken Pizza : ₹300(Regular), ₹400(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 316,
+  name: "*Chicken and Beef Loaded : ₹290(Regular), ₹400(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 317,
+  name: "*Chicken White Pizza : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 318,
+  name: "*Mexican Treat : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 319,
+  name: "*Chicken Overloaded : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 320,
+  name: "*Roasted Garlic Chicken Pizza : ₹290(Regular), ₹390(Medium), ₹490(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 321,
+  name: "*Hawaiian : ₹270(Regular), ₹370(Medium), ₹470(Large)",
+        category: "Pizza Non-Veg "
+    },
+    {
+        _id: 322,
+  name: "Calzone(Stuffed Pizza) Veg : ₹350",
+        category: "Calzone "
+    },
+    {
+        _id: 323,
+  name: "Calzone(Stuffed Pizza) Beef : ₹390",
+        category: "Calzone "
+    },
+    {
+        _id: 324,
+  name: "Calzone(Stuffed Pizza) Chicken : ₹390",
+        category: "Calzone "
+    },
+    {
+        _id: 325,
+  name: "Vegetable : ₹50(Regular), ₹60(Medium), ₹80(Large)",
+        category: "Toppings"
+    },
+    {
+        _id: 326,
+  name: "Non-Vegetable : ₹70(Regular), ₹80(Medium), ₹90(Large)",
+        category: "Toppings"
+    },
+    {
+        _id: 327,
+  name: "Mayonnaise : ₹20",
+        category: "Toppings"
+    },
+    {
+        _id: 328,
+  name: "Extra Cheese : ₹300",
+        category: "Toppings"
+    },
+    {
+        _id: 329,
+  name: "Garlic Bread : ₹100",
+        category: "Bread"
+    },
+    {
+        _id: 330,
+  name: "Garlic Bread with Cheese : ₹130",
+        category: "Bread"
+    },
+    {
+        _id: 331,
+  name: "Crispy Chicken Burger : ₹150",
+        category: "Burger"
+    },
+    {
+        _id: 332,
+  name: " MagiQ Chicken Burger : ₹150",
+        category: "Burger"
+    },
+    {
+        _id: 333,
+  name: "Magiq King Chicken Burger : ₹190",
+        category: "Burger"
+    },
+    {
+        _id: 334,
+  name: "Beef Burger : ₹180",
+        category: "Burger"
+    },
+    {
+        _id: 335,
+  name: " Fish Burger : ₹180",
+        category: "Burger"
+    },
+    {
+        _id: 336,
+  name: "MagiQ Veg Burger : ₹120",
+        category: "Burger"
+    },
+    {
+        _id: 337,
+  name: "MagiQ King Veg Burger : ₹150",
+        category: "Burger"
+    },
+    {
+        _id: 338,
+  name: "French Fries : ₹50(Medium), ₹100(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 339,
+  name: "Potato Wedges : ₹60(Medium), ₹120(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 340,
+  name: "Chicken Strips : ₹80(Medium), ₹150(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 341,
+  name: "Chicken Popcorn : ₹100(Medium), ₹200(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 342,
+  name: " Chicken Nuggets: ₹70(Medium), ₹140(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 343,
+  name: "Vegetable Nuggets : ₹50(Medium), ₹100(Large)",
+        category: "Sides"
+    },
+    {
+        _id: 344,
+        name: "Fish Fingers : ₹80(Medium), ₹150(Large)",
+        category: "Sides"
+    }
 ];

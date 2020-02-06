@@ -12,6 +12,8 @@ export class MenuComponent implements OnInit {
   FoodItems = FOODITEMS;
   categories:String[];
   categories2: string[];
+  categories3: string[];
+  categories4: string[];
 
   constructor() { 
     this.categories = [
@@ -21,24 +23,27 @@ export class MenuComponent implements OnInit {
       "Sundaes",
       "Falooda",
       "Fruit Salad",
+    ];
+    this.categories2 = [
       "Milk Shakes",
       "Thick Shakes",
       "Smoothies",
       "Fruit Juices",
       "Beverages"    
     ];
-    this.categories2 = [
-      "Softy & Ice-Creams",
-      "Waffles",
-      "Popcorn",
-      "Pizza Veg",
-      "Pizza Non-Veg",
-      "Calzone",
+    this.categories3 = [
+      "Waffles ",
+      "Popcorn ",
+      "Pizza Veg ",
+      "Pizza Non-Veg ",
+    ];
+    this.categories4 = [
+      "Calzone ",
       "Toppings",
       "Bread",
-      "Burgers",
+      "Burger",
       "Sides"
-    ]
+    ];
   }
 
   ngOnInit() {

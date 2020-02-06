@@ -21,3 +21,28 @@
         </ul>
     </li>
 </ul>
+<ul class="categories">
+    <li *ngFor="let category of categories3" class="category_item">
+        <h3 style="text-decoration: underline" class="cat_name" style="color: orange; text-decoration: underline;">
+            {{ category }} </h3>
+        <ul class="menu-items">
+            <li *ngFor="let foodItem of FoodItems">
+                <span *ngIf="foodItem.category===category" class="badge" style="color: greenyellow;">
+                    -{{foodItem.name}}</span>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul class="categories">
+    <li *ngFor="let category of categories4" class="category_item">
+        <h3 style="text-decoration: underline" class="cat_name" style="color: orange; text-decoration: underline;">
+            {{ category }} </h3>
+        <ul class="menu-items">
+            <li *ngFor="let foodItem of FoodItems">
+                <span *ngIf="foodItem.category===category" class="badge" style="color: greenyellow;">
+                    -{{foodItem.name}}</span>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 style="color: aquamarine;">* = check for ingredient details from restaurant</h3>

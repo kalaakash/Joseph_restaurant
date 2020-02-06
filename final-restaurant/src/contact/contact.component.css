@@ -15,12 +15,14 @@
 
 .phone-no{
   font-weight: bold;
-  font-size: 0.7em;
-  color: black;
+  font-size: 1.7em;
+  color: greenyellow;
+  background-color: black;
 }
 .location{
-  font-size: 1.3em;
-  color: black;
+  font-size: 1.1em;
+  color: greenyellow;
+  background-color: black;
 }
 .image-location{
   width: 350px;
