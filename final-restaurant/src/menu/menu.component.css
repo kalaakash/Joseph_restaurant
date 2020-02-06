@@ -5,8 +5,9 @@
   border-style: solid;
   border-width: 5px;
   border-color: royalblue; 
-
-      display: -webkit-box;
+    background-color: black;
+    color: greenyellow;
+    display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -23,6 +24,7 @@ li{
     list-style: none;
     font-size: 1.5em;
     font-weight: bold;
+    color: greenyellow;
 }
 .badge{
     padding: 0.5em 0.5em 0.5em 0.5em;
@@ -32,7 +34,9 @@ li{
 .categories{
     
   border-style: solid;
-  border-width: 2px;
+  border-width: 2px;    
+  background-color: black;
+color: greenyellow;
   border-color: rgb(252, 253, 255); 
   color: black;
 }
@@ -42,6 +46,7 @@ li{
     list-style: none;
     font-size: 1.1em;
     font-weight: bold;
+    color: greenyellow;
 }
 .badge{
     color: rgb(0, 0, 0);

@@ -9,14 +9,12 @@ li{
     font-family: 'Kalam';
     font-size: 3em;
     text-align: center;
-    color: rgb(185, 6, 0);
+    background-color: brown;
+    color: rgb(59, 253, 107);
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
-}
-li:hover{
-    color: rgb(7, 65, 26);
 }
 }
 
@@ -30,12 +28,10 @@ li{
     font-weight: bold;
     font-size:2em;
     text-align: center;
-    color: rgb(0, 0, 0);
+    background-color: brown;
+    color: rgb(59, 253, 107);
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -o-transition: color 1s ease-out;
   transition: color 1s ease-out;
-}
-li:hover{
-    color: rgb(0, 105, 35);
 }
