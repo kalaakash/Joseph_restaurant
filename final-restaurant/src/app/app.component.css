@@ -15,6 +15,9 @@
   background-color: inherit;
 }
 
+.taste-magiq-img{
+  background-color: #ffffff;
+}
 .images{
   width: 150px;
   height: 75px;
@@ -57,12 +60,6 @@
 
 }
 
-.header-name{
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FF6C7C;
-}
-
 .normal-button{
   text-align: center;
   cursor: pointer;
@@ -70,6 +67,12 @@
   color: #fff;
   background-color: inherit;
   text-decoration: none; 
+}
+
+.home-button{
+  text-align: center;
+  height: 60px;
+  width: 120px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -142,15 +145,8 @@
   border-radius: 0.4em;
 
 }
-
-.end-nav:hover{
-  background-color: inherit;
-}
-
-.header-name{
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FF6C7C;
+.taste-magiq-img{
+  background-color: #ffffff;
 }
 
 }

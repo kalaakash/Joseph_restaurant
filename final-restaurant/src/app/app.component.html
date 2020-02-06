@@ -1,20 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1 class="header-name" style="text-align: center">
-  <img src="../assets/images/Taste_Magic_burned.png" class="images" alt="TasteMagiq">
-</h1>
+<br><br><br>
 <div class="head-nav">
-      <button (click)="showHome()">
+      <button class="home-button" (click)="showHome()">
         HOME
       </button>
-      <button (click)="showAbout()">
+      <button class="home-button" (click)="showAbout()">
         ABOUT
       </button>
-      <button (click)="showMenu()">
+      <button class="home-button" (click)="showMenu()">
         MENU
       </button>
-      <button (click)="showContact()">
+      <button class="home-button" (click)="showContact()">
         CONTACT
       </button>
+      <div class="taste-magiq-img">
+        <img src="../assets/images/Taste_Magic_burned.png" class="images" alt="TasteMagiq">
+      </div>
 </div>
 <div class="main-nav">
   <div *ngIf = "currentState === states[0]">
