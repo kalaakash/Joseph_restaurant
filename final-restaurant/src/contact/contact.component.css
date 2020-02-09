@@ -31,8 +31,8 @@
 
 .mapouter {
   position: center;
-  padding-left: 15em;
-  text-align: right;
+  padding-left: 8.5em;
+  /* text-align: left; */
   height: 750px;
   width: 900px;
 }
@@ -41,6 +41,7 @@
   overflow: hidden;
   background: none !important;
   height: 750px;
+  align-items: left;
   width: 900px;
 }
 
@@ -62,8 +63,8 @@
 }
 .mapouter {
   position: center;
-  padding-left: 15em;
-  text-align: right;
+  padding-left: 8.5em;
+  /* text-align: left; */
   height: 750px;
   width: 900px;
 }
