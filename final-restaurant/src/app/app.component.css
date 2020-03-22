@@ -15,12 +15,19 @@
   background-color: inherit;
 }
 
-.taste-magiq-img{
-  background-color: #ffffff;
+.announcement{
+  width: 100%;
+  height: 50%;
+  color: red;
+  font-size: 2em;
+  align-items: center;
+  text-align: center;
+  background-color: royalblue;
 }
+
 .images{
-  width: 150px;
-  height: 75px;
+  width: 100px;
+  height: 50px;
 }
 
 .social-media{
@@ -122,6 +129,17 @@
   background-color: inherit;
   text-decoration: none; 
 }
+
+.announcement{
+  width: 100%;
+  height: 50%;
+  color: red;
+  font-size: 5em;
+  align-items: center;
+  text-align: center;
+  background-color: royalblue;
+}
+
 .end-nav{
   padding: 2px 2px 2px 2px;
   margin: 0;
@@ -144,9 +162,6 @@
 
   border-radius: 0.4em;
 
-}
-.taste-magiq-img{
-  background-color: #ffffff;
 }
 
 }
